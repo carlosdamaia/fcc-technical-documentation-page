@@ -1,24 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-family: sans-serif;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  #aside {
-    width: 20%;
-  }
-  
-  .content {
-    width: 100%;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+#aside {
+  overflow-y: scroll;
+  width: 25%;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+}
+
+#aside h1 {
+  border-bottom: 1px solid black;
+}
+
+#aside ol {
+  border: 1px solid black;
+}
+
+#aside li {
+  border-bottom: 1px solid black;
+  padding: 30px 20px;
+}
+
+.content {
+  position: absolute;
+  width: 75%;
+  left: 25%;
+}
+
